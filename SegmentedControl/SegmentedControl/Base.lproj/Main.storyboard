@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SegmentedControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="55w-Tu-o0I">
+                                <rect key="frame" x="119" y="89" width="137" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="0M2-dV-4oO"/>
+                                    <constraint firstAttribute="width" secondItem="55w-Tu-o0I" secondAttribute="height" multiplier="137:28" id="QRj-kI-wRF"/>
+                                    <constraint firstAttribute="width" constant="137" id="U1F-Gw-Egg"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Jakarta"/>
+                                    <segment title="Bandung"/>
+                                </segments>
+                                <connections>
+                                    <action selector="btnSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="O6U-Zi-PeO"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghP-WQ-q6a">
+                                <rect key="frame" x="16" y="333" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="8DL-zD-A9d"/>
+                                    <constraint firstAttribute="width" secondItem="ghP-WQ-q6a" secondAttribute="height" multiplier="49:3" id="UVB-Jr-NDZ"/>
+                                    <constraint firstAttribute="height" constant="21" id="Z6z-93-LtH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qnn-BP-FVY">
+                                <rect key="frame" x="41" y="137" width="292" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Qnn-BP-FVY" secondAttribute="height" multiplier="292:177" id="3S0-i2-rsx"/>
+                                    <constraint firstAttribute="height" constant="177" id="Jca-7j-fGL"/>
+                                    <constraint firstAttribute="width" constant="292" id="ywp-DJ-hC5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qnn-BP-FVY" secondAttribute="trailing" constant="26" id="60b-cO-1pX"/>
+                            <constraint firstItem="Qnn-BP-FVY" firstAttribute="top" secondItem="55w-Tu-o0I" secondAttribute="bottom" constant="20" id="LOv-AX-5r6"/>
+                            <constraint firstItem="ghP-WQ-q6a" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="OCc-xe-upD"/>
+                            <constraint firstItem="Qnn-BP-FVY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="WvY-h9-tbT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="55w-Tu-o0I" secondAttribute="trailing" constant="103" id="XHo-Pc-e5F"/>
+                            <constraint firstItem="ghP-WQ-q6a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Z3e-zg-miJ"/>
+                            <constraint firstItem="55w-Tu-o0I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="69" id="iM8-ka-miy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ghP-WQ-q6a" secondAttribute="bottom" constant="313" id="oCc-AZ-7yK"/>
+                            <constraint firstItem="ghP-WQ-q6a" firstAttribute="top" secondItem="Qnn-BP-FVY" secondAttribute="bottom" constant="19" id="uNg-Yc-QLR"/>
+                            <constraint firstItem="55w-Tu-o0I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="103" id="yy3-SG-au2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="LabelSegment" destination="ghP-WQ-q6a" id="SE0-he-fWu"/>
+                        <outlet property="SegmentViewController" destination="55w-Tu-o0I" id="tbt-05-IkS"/>
+                        <outlet property="imgKota" destination="Qnn-BP-FVY" id="yj5-Qa-4T6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
